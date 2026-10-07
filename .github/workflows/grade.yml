@@ -70,7 +70,7 @@ jobs:
           # Activity discovery
           # -----------------------------------------------------
 
-          activity_prefixes = ("PRE_", "LAB_")
+          activity_prefixes = ("P", "L")
 
           activities = sorted(
               (
@@ -191,8 +191,8 @@ jobs:
                       "❌ No valid activity directories were found.\n\n"
                   )
                   file.write(
-                      "An activity must start with `PRE_` or `LAB_` "
-                      "and contain `src/` and `test_src/`.\n"
+                      "An activity must start with `P` or `L` "
+                      "and contain `tests/`.\n"
                   )
               else:
                   file.write("| Activity | Result |\n")
